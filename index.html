@@ -1,36 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axion Auto - Mobile Mechanic Services</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #0d0d0d; color: #ffffff; text-align: center; margin: 0; }
-        .header { padding: 20px; background-color: #1a1a1a; font-size: 24px; font-weight: bold; }
-        .button { background-color: #00ccff; color: #fff; padding: 15px 30px; border: none; cursor: pointer; font-size: 18px; margin-top: 20px; }
-        .container { padding: 20px; }
-        .services { text-align: left; max-width: 600px; margin: auto; }
-        .service-item { padding: 10px; border-bottom: 1px solid #333; }
-        .footer { background-color: #1a1a1a; padding: 15px; font-size: 14px; margin-top: 20px; }
-    </style>
+    <title>Axion Auto Care</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">Welcome to Axion Auto</div>
-    <div class="container">
-        <p>Reliable, On-the-Go Auto Repairs and Maintenance.</p>
-        <button class="button" onclick="window.location.href='booking.html'">Book Now</button>
+    <header>
+        <h1>Axion Auto Care</h1>
+        <p>Full-Service Mechanic Shop + Mobile Auto Repair</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#mobile">Mobile Repair</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <section id="services">
         <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-item"><strong>Oil Change</strong> - Quick and professional oil change services.</div>
-            <div class="service-item"><strong>Brake Replacement</strong> - Ensure your safety with high-quality brake repairs.</div>
-            <div class="service-item"><strong>Battery Replacement</strong> - Get back on the road with a new car battery.</div>
-            <div class="service-item"><strong>Emergency Roadside Assistance</strong> - Jump-starts, tire changes, and more.</div>
-        </div>
+        <ul>
+            <li>Brake Repair & Replacement</li>
+            <li>Oil Changes</li>
+            <li>Full Diagnostics</li>
+            <li>Engine Tune-Ups</li>
+            <li>Suspension & Steering</li>
+            <li>Battery Replacement</li>
+            <li>Mobile Repairs (We Come to You)</li>
+            <li>Check Engine Light Diagnostics</li>
+            <li>Emergency Roadside Assistance</li>
+            <li>AC Recharge & Repair</li>
+            <li>Starter & Alternator Replacement</li>
+            <li>Radiator & Cooling System Service</li>
+        </ul>
+    </section>
 
-        <h2>Contact Us</h2>
-        <p>Email: info@axionauto.com | Phone: (555) 123-4567</p>
-    </div>
-    <div class="footer">© 2024 Axion Auto. All rights reserved.</div>
+    <section id="mobile">
+        <h2>Mobile Repair</h2>
+        <p>We bring the shop to you anywhere in NJ. Fast, reliable service at your location.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Book a Service</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email"><br>
+
+            <label for="service">Service Needed:</label>
+            <select name="service">
+                <option>Brake Repair</option>
+                <option>Oil Change</option>
+                <option>Diagnostics</option>
+                <option>Battery Replacement</option>
+                <option>Engine Tune-Up</option>
+                <option>Other</option>
+            </select><br>
+
+            <label for="datetime">Preferred Date/Time:</label>
+            <input type="text" name="datetime"><br>
+
+            <label for="message">Message (Optional):</label>
+            <textarea name="message"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>Phone: (609) 887-5519</p>
+        <p>Instagram: @axion.nj</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Axion Auto Care. All rights reserved.</p>
+    </footer>
 </body>
 </html>
