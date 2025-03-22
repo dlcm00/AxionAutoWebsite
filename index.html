@@ -8,77 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <main class="container">
+        <img src="logo.png" alt="Axion Auto Care Logo" class="logo">
         <h1>Axion Auto Care</h1>
-        <p>Full-Service Mechanic Shop + Mobile Auto Repair</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#mobile">Mobile Repair</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <p class="tagline">Full-Service Mechanic Shop + Mobile Repairs in NJ</p>
+        <a href="#contact" class="button">Book Now</a>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Brake Repair & Replacement</li>
-            <li>Oil Changes</li>
-            <li>Full Diagnostics</li>
-            <li>Engine Tune-Ups</li>
-            <li>Suspension & Steering</li>
-            <li>Battery Replacement</li>
-            <li>Mobile Repairs (We Come to You)</li>
-            <li>Check Engine Light Diagnostics</li>
-            <li>Emergency Roadside Assistance</li>
-            <li>AC Recharge & Repair</li>
-            <li>Starter & Alternator Replacement</li>
-            <li>Radiator & Cooling System Service</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Brake Repair & Replacement</li>
+                <li>Oil Changes</li>
+                <li>Full Diagnostics</li>
+                <li>Engine Tune-Ups</li>
+                <li>Suspension & Steering</li>
+                <li>Battery Replacement</li>
+                <li>Mobile Repairs (We Come to You)</li>
+                <li>Check Engine Light Diagnostics</li>
+                <li>Emergency Roadside Assistance</li>
+                <li>AC Recharge & Repair</li>
+                <li>Starter & Alternator Replacement</li>
+                <li>Radiator & Cooling System Service</li>
+                <li>Key Programming</li>
+            </ul>
+        </section>
 
-    <section id="mobile">
-        <h2>Mobile Repair</h2>
-        <p>We bring the shop to you anywhere in NJ. Fast, reliable service at your location.</p>
-    </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> (609) 887-5519</p>
+            <p><strong>Instagram:</strong> @axion.nj</p>
+        </section>
 
-    <section id="contact">
-        <h2>Book a Service</h2>
-        <form name="contact" method="POST" data-netlify="true">
-            <label for="name">Full Name:</label>
-            <input type="text" name="name" required><br>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email"><br>
-
-            <label for="service">Service Needed:</label>
-            <select name="service">
-                <option>Brake Repair</option>
-                <option>Oil Change</option>
-                <option>Diagnostics</option>
-                <option>Battery Replacement</option>
-                <option>Engine Tune-Up</option>
-                <option>Other</option>
-            </select><br>
-
-            <label for="datetime">Preferred Date/Time:</label>
-            <input type="text" name="datetime"><br>
-
-            <label for="message">Message (Optional):</label>
-            <textarea name="message"></textarea><br>
-
-            <button type="submit">Submit</button>
-        </form>
-        <p>Phone: (609) 887-5519</p>
-        <p>Instagram: @axion.nj</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Axion Auto Care. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Axion Auto Care. All rights reserved.</p>
+        </footer>
+    </main>
 </body>
 </html>
